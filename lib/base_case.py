@@ -26,7 +26,7 @@ class BaseCase:
         if email is None:
             base_part = 'learqa'
             domain = 'example.com'
-            random_part = datetime.now().strftime("%m%d%Y%H%M%S")
+            random_part = datetime.now().strftime("%m%d%Y%H%M%S%f")
             email = f"{base_part}{random_part}@{domain}"
         password = '123' if password is None else password
         username = 'learnqa' if username is None else username
